@@ -1,0 +1,92 @@
+@import './_mixins';
+@import './_variables';
+
+.button {
+    height: 55px;
+    @include display-flex;
+    @include justify-content(center);
+    @include align-items(center);
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: $font-bold;
+    padding: 10px 30px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
+    @include transition(all 0.18s ease-in-out);
+    max-width: 120px;
+    width: 100%;
+
+    &:hover,
+    &:focus {
+        @include transition(all 0.12s ease-in-out);
+    }
+
+    &--white-background {
+        background-color: $white;
+    }
+
+    &--black-background {
+        background-color: $black;
+    }
+    
+
+    &--green-background {
+        background-color: $primary-green;
+    }
+
+    &--transparent-background {
+        background-color: transparent;
+    }
+
+    &--white-text {
+        color: $white;
+    }
+
+    &--black-text {
+        color: $black;
+    }
+
+    &--green-text {
+        color: $primary-green;
+    }
+
+    &--white-border {
+        border: 2px solid $white;
+    }
+
+    &--black-border {
+        border: 2px solid $black;
+    }
+
+    &--green-border {
+        border: 2px solid $primary-green;
+    }
+
+    &--full-width {
+        max-width: 100%;
+    }
+
+    &--center {
+        margin: 0 auto;
+    }
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: none;
+    border: none !important;
+}
+
+.button,
+.button:hover,
+.button:active,
+button,
+button:hover,
+button:active,
+a,
+a:hover,
+a,
+a:active {
+    outline: none;
+}

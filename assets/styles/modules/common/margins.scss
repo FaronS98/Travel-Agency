@@ -1,0 +1,571 @@
+.no-margin {
+    margin-bottom: 0;
+}
+
+.margin-bot5 {
+    margin-bottom: 5px;
+}
+
+.margin-bot10 {
+    margin-bottom: 10px;
+}
+
+.margin-bot15 {
+    margin-bottom: 15px;
+}
+
+.margin-bot20 {
+    margin-bottom: 20px;
+}
+
+.margin-bot25 {
+    margin-bottom: 25px;
+}
+
+.margin-bot30 {
+    margin-bottom: 30px;
+}
+
+.margin-bot35 {
+    margin-bottom: 35px;
+}
+
+.margin-bot40 {
+    margin-bottom: 40px;
+}
+
+.margin-bot45 {
+    margin-bottom: 45px;
+}
+
+.margin-bot50 {
+    margin-bottom: 50px;
+}
+
+.margin-bot55 {
+    margin-bottom: 55px;
+}
+
+.margin-bot60 {
+    margin-bottom: 60px;
+}
+
+.margin-bot65 {
+    margin-bottom: 65px;
+}
+
+.margin-bot70 {
+    margin-bottom: 70px;
+}
+
+.margin-bot75 {
+    margin-bottom: 75px;
+}
+
+.margin-bot80 {
+    margin-bottom: 80px;
+}
+
+.margin-bot85 {
+    margin-bottom: 85px;
+}
+
+.margin-bot90 {
+    margin-bottom: 90px;
+}
+
+.margin-bot95 {
+    margin-bottom: 95px;
+}
+
+.margin-bot100 {
+    margin-bottom: 100px;
+}
+
+.margin-bot105 {
+    margin-bottom: 105px;
+}
+
+.margin-bot110 {
+    margin-bottom: 110px;
+}
+
+.margin-bot115 {
+    margin-bottom: 115px;
+}
+
+.margin-bot120 {
+    margin-bottom: 120px;
+}
+
+.margin-bot125 {
+    margin-bottom: 125px;
+}
+
+.no-margin-notebook {
+    @include notebook {
+        margin-bottom: 0;
+    }
+}
+
+.margin-bot5-notebook {
+    @include notebook {
+        margin-bottom: 5px;
+    }
+}
+
+.margin-bot10-notebook {
+    @include notebook {
+        margin-bottom: 10px;
+    }
+}
+
+.margin-bot15-notebook {
+    @include notebook {
+        margin-bottom: 15px;
+    }
+}
+
+.margin-bot20-notebook {
+    @include notebook {
+        margin-bottom: 20px;
+    }
+}
+
+.margin-bot25-notebook {
+    @include notebook {
+        margin-bottom: 25px;
+    }
+}
+
+.margin-bot30-notebook {
+    @include notebook {
+        margin-bottom: 30px;
+    }
+}
+
+.margin-bot35-notebook {
+    @include notebook {
+        margin-bottom: 35px;
+    }
+}
+
+.margin-bot40-notebook {
+    @include notebook {
+        margin-bottom: 40px;
+    }
+}
+
+.margin-bot45-notebook {
+    @include notebook {
+        margin-bottom: 45px;
+    }
+}
+
+.margin-bot50-notebook {
+    @include notebook {
+        margin-bottom: 50px;
+    }
+}
+
+.margin-bot55-notebook {
+    @include notebook {
+        margin-bottom: 55px;
+    }
+}
+
+.margin-bot60-notebook {
+    @include notebook {
+        margin-bottom: 60px;
+    }
+}
+
+.margin-bot65-notebook {
+    @include notebook {
+        margin-bottom: 65px;
+    }
+}
+
+.margin-bot70-notebook {
+    @include notebook {
+        margin-bottom: 70px;
+    }
+}
+
+.margin-bot75-notebook {
+    @include notebook {
+        margin-bottom: 75px;
+    }
+}
+
+.margin-bot80-notebook {
+    @include notebook {
+        margin-bottom: 80px;
+    }
+}
+
+.margin-bot85-notebook {
+    @include notebook {
+        margin-bottom: 85px;
+    }
+}
+
+.margin-bot90-notebook {
+    @include notebook {
+        margin-bottom: 90px;
+    }
+}
+
+.margin-bot95-notebook {
+    @include notebook {
+        margin-bottom: 95px;
+    }
+}
+
+.margin-bot100-notebook {
+    @include notebook {
+        margin-bottom: 100px;
+    }
+}
+
+.margin-bot105-notebook {
+    @include notebook {
+        margin-bottom: 105px;
+    }
+}
+
+.margin-bot110-notebook {
+    @include notebook {
+        margin-bottom: 110px;
+    }
+}
+
+.margin-bot115-notebook {
+    @include notebook {
+        margin-bottom: 115px;
+    }
+}
+
+.margin-bot120-notebook {
+    @include notebook {
+        margin-bottom: 120px;
+    }
+}
+
+.margin-bot125-notebook {
+    @include notebook {
+        margin-bottom: 125px;
+    }
+}
+
+.no-margin-tablet {
+    @include tablet {
+        margin-bottom: 0;
+    }
+}
+
+.margin-bot5-tablet {
+    @include tablet {
+        margin-bottom: 5px;
+    }
+}
+
+.margin-bot10-tablet {
+    @include tablet {
+        margin-bottom: 10px;
+    }
+}
+
+.margin-bot15-tablet {
+    @include tablet {
+        margin-bottom: 15px;
+    }
+}
+
+.margin-bot20-tablet {
+    @include tablet {
+        margin-bottom: 20px;
+    }
+}
+
+.margin-bot25-tablet {
+    @include tablet {
+        margin-bottom: 25px;
+    }
+}
+
+.margin-bot30-tablet {
+    @include tablet {
+        margin-bottom: 30px;
+    }
+}
+
+.margin-bot35-tablet {
+    @include tablet {
+        margin-bottom: 35px;
+    }
+}
+
+.margin-bot40-tablet {
+    @include tablet {
+        margin-bottom: 40px;
+    }
+}
+
+.margin-bot45-tablet {
+    @include tablet {
+        margin-bottom: 45px;
+    }
+}
+
+.margin-bot50-tablet {
+    @include tablet {
+        margin-bottom: 50px;
+    }
+}
+
+.margin-bot55-tablet {
+    @include tablet {
+        margin-bottom: 55px;
+    }
+}
+
+.margin-bot60-tablet {
+    @include tablet {
+        margin-bottom: 60px;
+    }
+}
+
+.margin-bot65-tablet {
+    @include tablet {
+        margin-bottom: 65px;
+    }
+}
+
+.margin-bot70-tablet {
+    @include tablet {
+        margin-bottom: 70px;
+    }
+}
+
+.margin-bot75-tablet {
+    @include tablet {
+        margin-bottom: 75px;
+    }
+}
+
+.margin-bot80-tablet {
+    @include tablet {
+        margin-bottom: 80px;
+    }
+}
+
+.margin-bot85-tablet {
+    @include tablet {
+        margin-bottom: 85px;
+    }
+}
+
+.margin-bot90-tablet {
+    @include tablet {
+        margin-bottom: 90px;
+    }
+}
+
+.margin-bot95-tablet {
+    @include tablet {
+        margin-bottom: 95px;
+    }
+}
+
+.margin-bot100-tablet {
+    @include tablet {
+        margin-bottom: 100px;
+    }
+}
+
+.margin-bot105-tablet {
+    @include tablet {
+        margin-bottom: 105px;
+    }
+}
+
+.margin-bot110-tablet {
+    @include tablet {
+        margin-bottom: 110px;
+    }
+}
+
+.margin-bot115-tablet {
+    @include tablet {
+        margin-bottom: 115px;
+    }
+}
+
+.margin-bot120-tablet {
+    @include tablet {
+        margin-bottom: 120px;
+    }
+}
+
+.margin-bot125-tablet {
+    @include tablet {
+        margin-bottom: 125px;
+    }
+}
+
+.no-margin-mobile {
+    @include mobile {
+        margin-bottom: 0;
+    }
+}
+
+.margin-bot5-mobile {
+    @include mobile {
+        margin-bottom: 5px;
+    }
+}
+
+.margin-bot10-mobile {
+    @include mobile {
+        margin-bottom: 10px;
+    }
+}
+
+.margin-bot15-mobile {
+    @include mobile {
+        margin-bottom: 15px;
+    }
+}
+
+.margin-bot20-mobile {
+    @include mobile {
+        margin-bottom: 20px;
+    }
+}
+
+.margin-bot25-mobile {
+    @include mobile {
+        margin-bottom: 25px;
+    }
+}
+
+.margin-bot30-mobile {
+    @include mobile {
+        margin-bottom: 30px;
+    }
+}
+
+.margin-bot35-mobile {
+    @include mobile {
+        margin-bottom: 35px;
+    }
+}
+
+.margin-bot40-mobile {
+    @include mobile {
+        margin-bottom: 40px;
+    }
+}
+
+.margin-bot45-mobile {
+    @include mobile {
+        margin-bottom: 45px;
+    }
+}
+
+.margin-bot50-mobile {
+    @include mobile {
+        margin-bottom: 50px;
+    }
+}
+
+.margin-bot55-mobile {
+    @include mobile {
+        margin-bottom: 55px;
+    }
+}
+
+.margin-bot60-mobile {
+    @include mobile {
+        margin-bottom: 60px;
+    }
+}
+
+.margin-bot65-mobile {
+    @include mobile {
+        margin-bottom: 65px;
+    }
+}
+
+.margin-bot70-mobile {
+    @include mobile {
+        margin-bottom: 70px;
+    }
+}
+
+.margin-bot75-mobile {
+    @include mobile {
+        margin-bottom: 75px;
+    }
+}
+
+.margin-bot80-mobile {
+    @include mobile {
+        margin-bottom: 80px;
+    }
+}
+
+.margin-bot85-mobile {
+    @include mobile {
+        margin-bottom: 85px;
+    }
+}
+
+.margin-bot90-mobile {
+    @include mobile {
+        margin-bottom: 90px;
+    }
+}
+
+.margin-bot95-mobile {
+    @include mobile {
+        margin-bottom: 95px;
+    }
+}
+
+.margin-bot100-mobile {
+    @include mobile {
+        margin-bottom: 100px;
+    }
+}
+
+.margin-bot105-mobile {
+    @include mobile {
+        margin-bottom: 105px;
+    }
+}
+
+.margin-bot110-mobile {
+    @include mobile {
+        margin-bottom: 110px;
+    }
+}
+
+.margin-bot115-mobile {
+    @include mobile {
+        margin-bottom: 115px;
+    }
+}
+
+.margin-bot120-mobile {
+    @include mobile {
+        margin-bottom: 120px;
+    }
+}
+
+.margin-bot125-mobile {
+    @include mobile {
+        margin-bottom: 125px;
+    }
+}

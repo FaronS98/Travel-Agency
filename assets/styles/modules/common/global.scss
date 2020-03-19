@@ -1,0 +1,77 @@
+@import './_mixins';
+@import './_variables';
+
+
+* {
+	box-sizing: border-box;
+	outline: none !important;
+	-webkit-overflow-scrolling: touch !important;
+}
+
+html, body,
+h1, h2, h3, h4, h5, h6, p,
+span, a, button,
+input, label, textarea,
+ul, ol, li {
+	font-family: $primary-font;
+	opacity: 1;
+	margin: 0;
+	font-weight: $font-regular;
+	letter-spacing: 0.01px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    width: 100%;
+    color: $primary-brown;
+}
+
+ul, ol {
+	list-style: none;
+	list-style-type: none;
+	padding: 0;
+}
+
+html, body {
+	background-color: $white;
+	position: relative;
+	overflow-x: hidden;
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100%;
+}
+
+.height100perc {
+	height: 100%;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+	html,
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+strong, .bold-text {
+	font-weight: $font-bold;
+}
+
+p {
+	font-size: 15px;
+	line-height: 28px;	
+	font-weight: $font-regular;
+	display: inline-block;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+} 

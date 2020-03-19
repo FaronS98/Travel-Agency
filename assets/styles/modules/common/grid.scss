@@ -1,0 +1,120 @@
+@import './_mixins';
+@import './_variables';
+
+.container {
+    @include display-flex;
+    @include flex-direction(column);
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    padding: 0;
+
+    &--horizontal {
+        @include flex-direction(row);
+    }
+}
+
+.row {
+    @include display-flex;
+    @include flex-wrap(nowrap);
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+
+    &--overflow-hidden {
+        overflow: hidden;
+    }
+
+    &--vertical-start {
+        @include justify-content(flex-start);
+    }
+
+    &--vertical-center {
+        @include justify-content(center);
+    }
+
+    &--vertical-end {
+        @include justify-content(flex-end);
+    }
+
+    &--space-between {
+        @include justify-content(space-between);
+    }
+
+    &--horizontal-start {
+        @include align-items(flex-start);
+    }
+
+    &--horizontal-center {
+        @include align-items(center);
+    }
+
+    &--horizontal-end {
+        @include align-items(flex-end);
+    }
+
+    &--vertical {
+        @include flex-direction(column);
+    }
+
+    &--wrap {
+        @include flex-wrap(wrap);
+    }
+
+    &--notebook-vertical {
+        @include notebook {
+            @include flex-direction(column);
+        }
+    }
+
+    &--notebook-vertical-reverse {
+        @include notebook {
+            @include flex-direction(column-reverse);
+        }
+    }
+
+    &--tablet-vertical-center {
+        @include tablet {
+            @include align-items(center);
+        }
+    }
+
+    &--tablet-vertical {
+        @include tablet {
+            @include flex-direction(column);
+        }
+    }
+
+    &--tablet-wrap {
+        @include tablet {
+            @include flex-wrap(wrap);
+        }
+    }
+
+    &--mobile-vertical {
+        @include mobile {
+            @include flex-direction(column);
+        }
+    }
+
+    &--mobile-vertical-center {
+        @include mobile {
+            @include align-items(center);
+        }
+    }
+}
+
+.column {
+    @include display-flex;
+    @include flex-direction(column);
+    width: auto;
+    max-width: 100%;
+
+    &--horizontal {
+        @include flex-direction(row);
+    }
+
+    &--overflow-hidden {
+        overflow: hidden;
+    }
+}

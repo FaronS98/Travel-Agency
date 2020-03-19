@@ -1,0 +1,21 @@
+@import './common/mixins';
+@import './common/variables';
+
+header{
+    max-width: 1440px;
+    margin:0 auto;
+    background: white url(/assets/images/header.jpg) no-repeat;
+    background-size: cover;
+    height:100vh;
+    @include display-flex;
+    @include flex-direction(row);
+    @include justify-content(space-around);
+}
+
+section{
+    height:100vh;
+}
+
+footer{
+    height:100vh;
+}

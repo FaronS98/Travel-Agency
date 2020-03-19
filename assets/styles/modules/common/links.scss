@@ -1,0 +1,25 @@
+@import './_mixins';
+@import './_variables';
+
+a {
+    text-decoration: none;
+}
+
+a,
+span,
+button,
+.button {
+	@include transition(all 0.18s ease-in-out);
+	text-decoration: none !important;
+}
+
+a:hover,
+a:focus,
+.button:hover,
+.button:focus,
+button:hover,
+button:focus {
+	@include transition(all 0.12s ease-in-out);
+	text-decoration: none !important;
+	cursor: pointer;
+}
