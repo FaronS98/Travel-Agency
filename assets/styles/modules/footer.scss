@@ -1,0 +1,13 @@
+@import './common/mixins';
+@import './common/variables';
+
+.footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:25px;
+    font-size: 18px;
+    a{
+        color:white;
+    }
+}

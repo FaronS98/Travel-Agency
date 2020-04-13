@@ -1,21 +1,36 @@
 @import './common/mixins';
 @import './common/variables';
 
-header{
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.header{
     max-width: 1440px;
+    height:550px;
     margin:0 auto;
-    background: white url(/assets/images/header.jpg) no-repeat;
+    background-image: url(../assets/images/header.jpg);
+    background-position: -50px -100px 0 0;
     background-size: cover;
-    height:100vh;
-    @include display-flex;
-    @include flex-direction(row);
-    @include justify-content(space-around);
-}
 
-section{
-    height:100vh;
-}
+    p{
+        width:100%;
+        height:inherit;
+        padding:140px 150px;
+        line-height: 50px;
+        background-color: rgba(126, 112, 112, 0.582);
+        text-align: center;
+        color:white;
+        font-family: 'Calligraffitti', cursive, sans-serif;
+        font-size: 32px;
+    }
 
-footer{
-    height:100vh;
+    span{
+        display:block;
+        padding-top:50px;
+        font-family: 'Roboto Condensed', Arial, sans-serif;
+        color:#ddd;
+    }
 }
