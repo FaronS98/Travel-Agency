@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta cherset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globetrotter</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/libs/bootstrap.min.css">    
+    <link rel="stylesheet" href="dist/main.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <nav class="navtop row row--wrap">
+            <div class="logo row row--space-between">
+                <img src="assets/images/logo.jpg">
+                <h1>lobetrotter</h1>
+            </div>
+            <ul class="row row--horizontal-center row--vertical-end row--wrap">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="regulations.html">Regulamin</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div class="sigin">
+                <a href="/login" class="button button--white-background button--black-text button--black-border margin-bot20">Zaloguj&nbsp;się</a>
+                <a href="/login" class="button button--white-background button--black-text button--black-border">Zarejestruj&nbsp;się</a>
+            </div>
+        </nav>
+        <!-- <header class="header header--offerspage">
+            <p>Zaplanujemy twoją wyprawę, zacznij od wybrania kategorii</p>
+        </header> -->
+        <header class="headerofferpage  column row--horizontal-center">
+            <div class="row row--vertical-center row--horizontal-center">
+                <div class="options column row--vertical-center">
+                    <label>Typ wyjzadu</label><input type="text" placeholder="Typ wyjazdu">
+                    <label>Kierunek</label><input type="text" placeholder="Kierunek podróży">
+                    <label>Miesiąc</label><input type="text" name="Months" list="Months" placeholder="Miesiąc">
+                            <datalist id="Months">
+                                <option value="Styczeń">
+                                <option value="Luty">
+                                <option value="Marzec">
+                                <option value="Kwiecień">
+                                <option value="Maj">
+                                <option value="Czerwiec">
+                                <option value="Lipiec">
+                                <option value="Sierpień">
+                                <option value="Wrzesień">
+                                <option value="Pażdziernik">
+                                <option value="Listopad">
+                                <option value="Grudzień">
+                            </datalist>
+                </div>
+                <button type="submit">Szukaj<i class="fas fa-search"></i></button>
+                <div class="options column row--vertical-center">
+                        <label>Dorośli</label> <input type="number" value="2" min="1" max="20" name="Mature" placeholder="Dorośli">
+                        <label>Dzieci</label><input type="number" value="0" min="1" max="40" name="Kids" placeholder="Dzieci">
+                        <label>Pobyt</label><input type="number" value="7" min="1" max="31" name="Time" placeholder="Pobyt">
+                </div>
+             </div>
+        </header>
+
+        <div class="modal" id="mymodal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Tytuł - Kraj</h2>
+                        <img src="assets/images/cross.png"  type="button" data-dismiss="modal">
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/images/sea.jpg" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium quas quasi, deserunt perspiciatis repudiandae voluptas laborum, id totam aut suscipit esse at facilis corrupti sed quia vero beatae omnis reprehenderit.</p>
+                        <div class="informations row row--space-between">
+                            <div class="info column row--vertical-center">
+                                <p>Kraj: Polsa</p>
+                                <p>Miasta: Kielce Nowy Sącz</p>
+                                <p>Terminy dostępne w miesiącach: Styczeń Luty</p>
+                            </div>
+                            <div class="info column row--vertical-center">
+                                <p>Liczba dorosłych: 2 do 10</p>
+                                <p>Liczba dzieci: 2 do 10</p>
+                                <p>Liczba dni pobytu: 4 do 31</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer row row--vertical-center">
+                       <button type="button" data-toggle="modal" data-target="#mymodal2" data-dismiss="modal" class="button button--white-background button--black-text button--black-border">Kup</a>
+                       </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--buy" id="mymodal2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Płatność kartą</h2>
+                            <img src="assets/images/cross.png"  type="button" data-dismiss="modal">
+                        </div>
+                        <div class="modal-body column row--vertical-center row--horizontal-center">
+                                <label>Numer karty:</label> <input type="number"  min="1111111111111111" max="9999999999999999" name="Mature" placeholder="6543 2345 000 8756">
+                                <label>Data ważności:</label>
+                                <div class="date row row--vertical-center">
+                                    <input type="number"  min="01" max="12" name="Kids" placeholder="MM">
+                                    <p>/</p>
+                                    <input type="number" min="2020" max="2025" name="Kids" placeholder="RR">
+                                </div>
+                                <label>CW2/CVC2</label><input type="number" min="111" max="999" name="Time" placeholder="648">
+                        </div>
+                        <div class="modal-footer row row--vertical-center">
+                                <button type="button" data-dismiss="modal" class="button button--white-background button--black-text button--black-border">Zapłać</a>
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <section class="offers">
+                <div class="offer"  data-toggle="modal" data-target="#mymodal">
+                    <img src="assets/images/sea.jpg" alt="">
+                    <p>"Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela.Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela</p>
+                    
+                    <h4>1000zł/doba</h3>
+                </div>
+                <div class="offer">
+                        <img src="assets/images/sea.jpg" alt="">
+                        <p>"Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela.Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela</p>
+                        
+                        <h4>1000zł/doba</h3>
+                    </div>
+                    <div class="offer">
+                            <img src="assets/images/sea.jpg" alt="">
+                            <p>"Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela.Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela</p>
+                            
+                            <h4>1000zł/doba</h3>
+                        </div>
+                        <div class="offer">
+                                <img src="assets/images/sea.jpg" alt="">
+                                <p>"Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela.Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela</p>
+                                
+                                <h4>1000zł/doba</h3>
+                            </div>
+                            <div class="offer">
+                                    <img src="assets/images/logo.jpg" alt="">
+                                    <p>"Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela.Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela</p>
+                                    
+                                    <h4>1000zł/doba</h3>
+                                </div>
+                                <div class="offer">
+                                        <img src="assets/images/logo.jpg" alt="">
+                                        <p>"Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela.Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela</p>
+                                        
+                                        <h4>1000zł/doba</h3>
+                                    </div>
+        </section>
+        <footer class="footer"><a href="https://pl.freepik.com/darmowe-zdjecie-wektory/logo">Logo plik wektorowy utworzone przez freepik - pl.freepik.com</a></footer>
+    </div>
+    <script src="assets/scripts/libs/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="dist/main.js"></script>
+    <script src="assets/scripts/libs/bootstrap.min.js"></script>
+</body>
+</html>

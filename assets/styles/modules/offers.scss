@@ -1,0 +1,211 @@
+@import './common/mixins';
+@import './common/variables';
+
+
+.headerofferpage{
+    height:400px;
+    background-image: url(../assets/images/silver.jpg);
+    background-size: cover;
+    background-position-y: -50px;
+
+    .options{
+        width:200px;
+        margin:80px 100px;
+        
+        input{
+            // width:200px;
+            height: 40px;
+            margin:5px 0;
+            padding:0 20px;
+            border: 1px solid black;
+            border-radius: 25px;
+            color:black;
+            background-color:white;
+            cursor:pointer;
+        }
+        ::placeholder{
+            color:rgb(138, 133, 133);
+        }
+    }
+
+    label{
+        // width:200px;
+        text-align: center;
+       // padding-left: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+
+    button{
+        width:200px;
+        height:50px;
+        background-color: rgb(9, 134, 236);
+        padding:0 20px;
+        border: 3px solid cornflowerblue !important;
+        border-radius: 25px;
+        text-align: right;
+        font-family: 'Roboto Condensed', Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color:white;
+        i{
+            padding-left: 40px;
+            padding-right: 10px;
+            font-size: 18px;
+        }
+    }
+}
+
+.offers{
+    @include display-flex;
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    flex-wrap: wrap;
+    width: 1400px; 
+    margin:0 auto;
+    padding:50px;
+    
+    .offer{
+        width:400px;
+        border: 1px solid rgb(216, 212, 212);
+        margin-bottom:20px;
+        // margin:20px 5px;
+        // border: 2px solid black;
+    }
+
+    .offer:hover{
+        background-color: rgb(245, 204, 94);
+    }
+    img{
+        width:400px;
+        height:250px;
+    }
+    p{
+        padding:20px 10px 10px 20px;;
+        font-size: 16px;
+
+    }
+    // a{
+    //     display: inline-block;
+    //     width:100%;
+    //     padding-right: 30px;
+    //     text-align: right;
+    //     color:rgb(75, 74, 74) !important;
+    // }
+    // .offers a:hover{
+    //     color:red !important;
+    // }
+    h4{
+        width:100%;
+        padding:30px 0;
+        text-align: center;
+        font-family: Georgia, Times, 'Times New Roman', serif;
+    }
+
+}
+
+.modal{
+    width:810px; 
+    height: 700px;
+    margin:100px auto;
+    padding: 0;
+    overflow-y: auto;
+    .modal-title{
+        text-align: center;
+    }   
+
+    .modal-header{
+        img{
+            width:50px;
+            cursor:pointer;
+        }
+    }
+
+    .modal-dialog{
+        border: 10px solid black;
+    }
+
+    .modal-content, .modal-body, .modal-dialog, .modal-header, .modal-title{
+        width:800px;
+        max-width: 800px;
+        border:none;
+        margin:0 auto;
+    }
+
+    .modal-body{
+        background-color: rgb(250, 237, 237);
+        padding: 20px;
+        p{
+            padding: 20px 0;
+            font-size: 18px;
+        }
+        img{
+        width:760px;
+        height: 300px;
+        }
+    }
+
+    .informations{
+        padding:20px 50px;
+        .info{
+            padding-right:20px;
+            width:50%;
+        }
+        :nth-child(even){
+            padding-right:0;
+           p{
+                padding-left:30px;
+                padding-right: 0;
+           }
+        }
+    }
+
+    .modal-footer{
+        button{
+            width:150px;
+            background-color: rgb(9, 134, 236);
+            color:rgb(160, 148, 148) !important;
+            font-size: 20px;
+            text-align: center;
+            font-family: Lato,Arial,sans-serif;
+        }
+    }
+
+    &--buy{
+            margin:150px auto;
+            width:610px;
+            height: 500px;
+        .modal-content, .modal-body, .modal-dialog, .modal-header, .modal-title{
+            width:600px;
+            max-width: 600px;
+            margin:50px auto;
+            border:none;
+            margin:0 auto;
+        }
+        .modal-body{
+            p{
+                width:20px;
+                height:30px;
+                padding:0 5px;
+            }
+            :last-child{
+                width:150px;
+            }
+        }
+
+        input{
+            width:300px;
+        }
+            
+        .date{
+            height:30px;
+            input{
+                width: 100px !important;
+                height: 30px;
+            }
+        }
+        
+        
+    }
+}
