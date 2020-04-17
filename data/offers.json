@@ -13,8 +13,8 @@
         "adultsNumberMax": 6,
         "childsNumberMin": 1,
         "childsNumberMax": 4,
-        "daysMin": 3,
-        "daysMax":14
+        "daysMin": 1,
+        "daysMax": 14
     },
     {   
         "id": 2,
@@ -26,12 +26,12 @@
         "country": "Ukraina",
         "city": "Odessa",
         "months": "Lipiec",
-        "adultsNumberMin": 2,
+        "adultsNumberMin": 1,
         "adultsNumberMax": 6,
-        "childsNumberMin": 2,
+        "childsNumberMin": 1,
         "childsNumberMax": 2,
-        "daysMin": 7,
-        "daysMax":20
+        "daysMin": 1,
+        "daysMax": 20
     },
     {
         "id": 3,
@@ -43,12 +43,12 @@
         "country": "Niemcy",
         "city": "Berlin",
         "months": "Styczeń",
-        "adultsNumberMin": 2,
+        "adultsNumberMin": 1,
         "adultsNumberMax": 4,
-        "childsNumberMin": 0,
-        "childsNumberMax": 0,
+        "childsNumberMin": 1,
+        "childsNumberMax": 1,
         "daysMin": 1,
-        "daysMax":2
+        "daysMax": 2
     },
     {   
         "id": 4,
@@ -62,10 +62,10 @@
         "months": "Listopad",
         "adultsNumberMin": 1,
         "adultsNumberMax": 10,
-        "childsNumberMin": 0,
+        "childsNumberMin": 1,
         "childsNumberMax": 5,
-        "daysMin": 5,
-        "daysMax":20
+        "daysMin": 1,
+        "daysMax": 20
     },
     {   
         "id": 5,
@@ -79,10 +79,10 @@
         "months": "Lipiec, Sierpień, Wrzesień",
         "adultsNumberMin": 1,
         "adultsNumberMax": 10,
-        "childsNumberMin": 0,
+        "childsNumberMin": 1,
         "childsNumberMax": 2,
-        "daysMin":5,
-        "daysMax":14
+        "daysMin":1,
+        "daysMax": 14
     },        
     {   
         "id": 6,
@@ -99,7 +99,7 @@
         "childsNumberMin": 0,
         "childsNumberMax": 5,
         "daysMin": 3,
-        "daysMax":31
+        "daysMax": 31
     },
     {   
         "id": 7,
@@ -111,12 +111,12 @@
         "country": "Polska",
         "city": "Kraków",
         "months": "Luty",
-        "adultsNumberMin": 5,
+        "adultsNumberMin": 1,
         "adultsNumberMax": 10,
-        "childsNumberMin": 0,
-        "childsNumberMax": 0,
+        "childsNumberMin": 1,
+        "childsNumberMax": 2,
         "daysMin": 1,
-        "daysMax":20
+        "daysMax": 20
     },
     {   
         "id": 8,
@@ -130,10 +130,10 @@
         "months": "Grudzień",
         "adultsNumberMin": 1,
         "adultsNumberMax": 4,
-        "childsNumberMin": 0,
+        "childsNumberMin": 1,
         "childsNumberMax": 4,
-        "daysMin": 2,
-        "daysMax":5
+        "daysMin": 1,
+        "daysMax": 5
     },
     {   
         "id": 9,
@@ -147,10 +147,10 @@
         "months": "Czerwiec",
         "adultsNumberMin": 1,
         "adultsNumberMax": 20,
-        "childsNumberMin": 0,
+        "childsNumberMin": 1,
         "childsNumberMax": 40,
         "daysMin": 1,
-        "daysMax":31
+        "daysMax": 31
     },
     {   
         "id": 10,
@@ -164,10 +164,10 @@
         "months": "Maj",
         "adultsNumberMin": 1,
         "adultsNumberMax": 20,
-        "childsNumberMin": 0,
+        "childsNumberMin": 1,
         "childsNumberMax": 40,
         "daysMin": 1,
-        "daysMax":31
+        "daysMax": 31
     },
     {   
         "id": 11,
@@ -181,10 +181,10 @@
         "months": "Lipiec",
         "adultsNumberMin": 1,
         "adultsNumberMax": 1,
-        "childsNumberMin": 0,
+        "childsNumberMin": 1,
         "childsNumberMax": 40,
         "daysMin": 1,
-        "daysMax":31
+        "daysMax": 31
     },
     {   
         "id": 12,
@@ -198,10 +198,10 @@
         "months": "Kwiecień",
         "adultsNumberMin": 1,
         "adultsNumberMax": 1,
-        "childsNumberMin": 10,
+        "childsNumberMin": 1,
         "childsNumberMax": 20,
-        "daysMin": 7,
-        "daysMax":20
+        "daysMin": 1,
+        "daysMax": 20
     },
     {   
         "id": 13,
@@ -213,12 +213,12 @@
         "country": "USA",
         "city": "Chicago",
         "months": "Marzec",
-        "adultsNumberMin": 2,
+        "adultsNumberMin": 1,
         "adultsNumberMax": 8,
-        "childsNumberMin": 0,
+        "childsNumberMin": 1,
         "childsNumberMax": 4,
-        "daysMin":2,
-        "daysMax":10
+        "daysMin":1,
+        "daysMax": 10
     },
     {   
         "id": 14,
@@ -232,10 +232,10 @@
         "months": "Wrzesień",
         "adultsNumberMin": 1,
         "adultsNumberMax": 10,
-        "childsNumberMin": 0,
+        "childsNumberMin": 1,
         "childsNumberMax": 5,
-        "daysMin": 7,
-        "daysMax":31
+        "daysMin": 1,
+        "daysMax": 31
     },
     {   
         "id": 15,
@@ -249,10 +249,10 @@
         "months": "Luty",
         "adultsNumberMin": 1,
         "adultsNumberMax": 15,
-        "childsNumberMin": 0,
+        "childsNumberMin": 1,
         "childsNumberMax": 6,
         "daysMin": 1,
-        "daysMax":20
+        "daysMax": 20
     },
     {   
         "id": 16,
@@ -266,10 +266,10 @@
         "months": "lipiec",
         "adultsNumberMin": 1,
         "adultsNumberMax": 20,
-        "childsNumberMin": 0,
-        "childsNumberMax": 0,
+        "childsNumberMin": 1,
+        "childsNumberMax": 10,
         "daysMin": 1,
-        "daysMax":31
+        "daysMax": 31
     },
     {   
         "id": 17,
@@ -281,12 +281,12 @@
         "country": "USA",
         "city": "New Jork",
         "months": "Maj",
-        "adultsNumberMin": 4,
+        "adultsNumberMin": 1,
         "adultsNumberMax": 12,
-        "childsNumberMin": 0,
-        "childsNumberMax": 0,
-        "daysMin": 5,
-        "daysMax":10
+        "childsNumberMin": 1,
+        "childsNumberMax": 3,
+        "daysMin": 1,
+        "daysMax": 10
     },
     {   
         "id": 18,
@@ -300,10 +300,10 @@
         "months": "Lipiec, Sierpień, Wrzesień",
         "adultsNumberMin": 1,
         "adultsNumberMax": 20,
-        "childsNumberMin": 0,
+        "childsNumberMin": 1,
         "childsNumberMax": 10,
-        "daysMin": 4,
-        "daysMax":25
+        "daysMin": 1,
+        "daysMax": 25
     },
     {   
         "id": 19,
@@ -317,10 +317,10 @@
         "months": "Maj",
         "adultsNumberMin": 1,
         "adultsNumberMax": 4,
-        "childsNumberMin": 0,
+        "childsNumberMin": 1,
         "childsNumberMax": 6,
-        "daysMin": 2,
-        "daysMax":4
+        "daysMin": 1,
+        "daysMax": 4
     },
     {   
         "id": 20,
@@ -332,29 +332,29 @@
         "country": "Egipt",
         "city": "Asuan",
         "months": "Czerwiec",
-        "adultsNumberMin": 2,
+        "adultsNumberMin": 1,
         "adultsNumberMax": 6,
-        "childsNumberMin": 0,
-        "childsNumberMax": 0,
-        "daysMin": 2,
-        "daysMax":10
+        "childsNumberMin": 1,
+        "childsNumberMax": 2,
+        "daysMin": 1,
+        "daysMax": 10
     },
     {   
         "id": 21,
         "name": "Wycieczka do Toledo",
         "imageUrl": "assets/images/offer7.jpg",
         "description": "Jeśli szukacie dobrego pomysłu na spędzenie udanego urlopu, z dala od zgiełku i stresu miasta, polecamy góry. To miejsce, w którym znajdzie coś dla siebie każdy, kto poszukuje piękna, kontaktu z przyrodą i prawdziwie głębokich doznań estetycznych. Mają w sobie niezwykły urok, więc znakomicie nadają się jako punkty startowe wycieczek z wyjątkowymi widokami. ",
-        "price":3000,
+        "price": 3000,
         "type": "Góry",
         "country": "Hiszpania",
         "city": "Toledo",
         "months": "Lipiec",
-        "adultsNumberMin": 5,
+        "adultsNumberMin": 1,
         "adultsNumberMax": 10,
-        "childsNumberMin": 2,
+        "childsNumberMin": 1,
         "childsNumberMax": 5,
-        "daysMin": 7,
-        "daysMax":20
+        "daysMin": 1,
+        "daysMax": 20
     },
     {   
         "id": 22,
@@ -366,12 +366,12 @@
         "country": "Włochy",
         "city": "Neapol",
         "months": "Czerwiec, Lipiec",
-        "adultsNumberMin": 2,
+        "adultsNumberMin": 1,
         "adultsNumberMax": 10,
-        "childsNumberMin": 0,
+        "childsNumberMin": 1,
         "childsNumberMax": 30,
-        "daysMin": 2,
-        "daysMax":3
+        "daysMin": 1,
+        "daysMax": 3
     },
     {   
         "id": 23,
@@ -383,11 +383,11 @@
         "country": "Chiny",
         "city": "Szanghaj",
         "months": "Czerwiec, Lipiec",
-        "adultsNumberMin": 2,
+        "adultsNumberMin": 1,
         "adultsNumberMax": 10,
-        "childsNumberMin": 0,
+        "childsNumberMin": 1,
         "childsNumberMax": 30,
-        "daysMin": 2,
-        "daysMax":3
+        "daysMin": 1,
+        "daysMax": 3
     }
 ]

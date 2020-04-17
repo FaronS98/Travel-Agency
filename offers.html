@@ -24,44 +24,50 @@
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
             <div class="sigin">
-                <a href="/login" class="button button--white-background button--black-text button--black-border margin-bot20">Zaloguj&nbsp;się</a>
-                <a href="/login" class="button button--white-background button--black-text button--black-border">Zarejestruj&nbsp;się</a>
+                <a href="#" class="button button--white-background button--black-text button--black-border margin-bot20">Zaloguj&nbsp;się</a>
+                <a href="#" class="button button--white-background button--black-text button--black-border">Zarejestruj&nbsp;się</a>
             </div>
         </nav>
         <header class="headerofferpage  column row--horizontal-center">
-            <div class="row row--vertical-center row--horizontal-center">
+            <form id="filter-form" class="row row--vertical-center row--horizontal-center">
                 <div class="options column row--vertical-center">
-                    <label>Typ wyjzadu</label><input type="text" name="Type" list="Type" placeholder="Typ wyjazdu">
-                        <datalist id="Type">
-                            <option value="Sport">
-                            <option value="Wypoczynek">
-                            <option value="Kolonia">
-                            <option value="Góry">
-                            <option value="Morze">
-                            <option value="Zwiedzanie">
-                        </datalist>
-                    <label>Kierunek</label><input type="text" name="Way" list="Way" placeholder="Kierunek">
-                            <datalist id="Way">
-                                <option value="Polsa">
-                                <option value="Niemcy">
-                                <option value="Egipt">
-                                <option value="USA">
-                                <option value="Włochy">
-                                <option value="Hiszpania">
-                                <option value="Ukraina">
-                                <option value="Chiny">
-                                <option value="Indie">
-                                <option value="Brazylia">
-                            </datalist>
-                    <label>Maksymalna Cena</label> <input type="number" min="200" max="3000" name="Mature" placeholder="Minimum 200zł">
+                    <label>Typ wyjzadu</label>
+                    <select id="type">
+                        <option value="" defaul disabled>Typ wyjazdu</option>
+                        <option value="sport">Sport</option>
+                        <option value="wypoczynek">Wypoczynek</option>
+                        <option value="kolonia">Kolonia</option>
+                        <option value="gory">Góry</option>
+                        <option value="morze">Morze</option>
+                        <option value="zwiedzanie">Zwiedzanie</option>
+                        </select>
+                    <label>Kierunek</label>
+                    <select id="direction">
+                        <option value="" default disabled>Kierunek</option>
+                        <option value="polska">Polska</option>
+                        <option value="niemcy">Niemcy</option>
+                        <option value="egipt">Egipt</option>
+                        <option value="usa">USA</option>
+                        <option value="wlochy">Włochy</option>
+                        <option value="hiszpania">Hiszpania</option>
+                        <option value="ukraina">Ukraina</option>
+                        <option value="chiny">Chiny</option>
+                        <option value="indie">Indie</option>
+                        <option value="brazylia">Brazylia</option>
+                    </select>
+                    <label>Maksymalna Cena</label>
+                    <input type="number" min="200" max="3000" name="price" placeholder="Minimum 200zł">
                 </div>
-                <button type="submit">Szukaj<i class="fas fa-search"></i></button>
+                <button id="filter-search-button" type="submit">Szukaj<i class="fas fa-search"></i></button>
                 <div class="options column row--vertical-center">
-                        <label>Dorośli</label> <input type="number" min="1" max="20" name="Mature" placeholder="Dorośli">
-                        <label>Dzieci</label><input type="number"  min="1" max="40" name="Kids" placeholder="Dzieci">
-                        <label>Pobyt</label><input type="number" min="1" max="31" name="Time" placeholder="Pobyt">
+                    <label>Dorośli</label>
+                    <input type="number" min="1" max="20" name="mature" placeholder="Dorośli">
+                    <label>Dzieci</label>
+                    <input type="number"  min="1" max="40" name="kids" placeholder="Dzieci">
+                    <label>Pobyt</label>
+                    <input type="number" min="1" max="31" name="time" placeholder="Pobyt">
                 </div>
-             </div>
+            </form>
         </header>
         <div class="modal" id="mymodal">
             <div class="modal-dialog">
@@ -71,7 +77,7 @@
                         <img src="assets/images/cross.png"  type="button" data-dismiss="modal">
                     </div>
                     <div class="modal-body">
-                        <img src="assets/images/sea.jpg" alt="">
+                        <img id="modal-image" src="#" alt="Offer image">
                         <p id="modal-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium quas quasi, deserunt perspiciatis repudiandae voluptas laborum, id totam aut suscipit esse at facilis corrupti sed quia vero beatae omnis reprehenderit.</p>
                         <div class="informations row row--space-between">
                             <div class="info column row--vertical-center">

@@ -13,7 +13,7 @@
         width:200px;
         margin:80px 100px;
         
-        input{
+        input, select{
             // width:200px;
             height: 40px;
             margin:5px 0;
@@ -68,14 +68,14 @@
     width: 100%; 
     max-width: 1920px;;
     margin:0 auto;
-    padding:50px;
+    padding:50px 10px;
     
     .offer{
         width:400px;
         height:650px;
         max-height: 700px;
         border: 1px solid rgb(216, 212, 212);
-        margin-left:15px;
+        margin-left:10px;
         margin-bottom:20px;
 
         h2{
@@ -112,7 +112,8 @@
 
 .modal{
     width:810px; 
-    height: 700px;
+    height: 500px;
+    min-height: 300px;
     margin:100px auto;
     padding: 0;
     overflow-y: auto;
