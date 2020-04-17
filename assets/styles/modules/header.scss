@@ -47,3 +47,79 @@
     }
 }
 
+
+
+@include desktop1600 {
+    .header{
+        p{
+            font-size: 34px;
+        }
+    }
+}
+
+@include desktop{
+    .header{
+        height:500px;
+        p{
+            padding-top:90px;
+            font-size: 30px;
+        }
+    }
+}
+
+@include notebook{
+    .header{
+        p{
+            padding:70px 100px;
+            font-size:26px;
+        }
+    }
+}
+
+@include tablet{
+    .header{
+        p{
+            padding:70px 100px;
+            font-size:26px;
+        }
+        span{
+            padding-top: 30px;
+        }
+    }
+}
+
+@include mobile550{
+    .header{
+        height:400px;
+        p{
+            padding-top:20px;
+            font-size: 20px;
+            line-height: 2em;
+        }
+        span{
+            padding-top:20px;
+        }
+    }
+}
+
+
+@include mobile{
+    .header{
+        height: 300px;
+        p{
+            padding:20px;
+            font-size: 16px;
+        }
+        span{
+            padding-top:20px;
+        }
+    }
+}
+
+@include phone{
+    .header{
+        p{
+            font-size: 14px;
+        }
+    }
+}
