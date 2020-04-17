@@ -3,6 +3,7 @@
 
 
 .headerofferpage{
+    width:100%;
     height:400px;
     background-image: url(../assets/images/silver.jpg);
     background-size: cover;
@@ -23,6 +24,7 @@
             background-color:white;
             cursor:pointer;
         }
+
         ::placeholder{
             color:rgb(138, 133, 133);
         }
@@ -49,6 +51,7 @@
         font-size: 20px;
         font-weight: 500;
         color:white;
+        
         i{
             padding-left: 40px;
             padding-right: 10px;
@@ -60,42 +63,44 @@
 .offers{
     @include display-flex;
     @include flex-direction(row);
-    @include justify-content(space-between);
+    @include justify-content(center);
     flex-wrap: wrap;
-    width: 1400px; 
+    width: 100%; 
+    max-width: 1920px;;
     margin:0 auto;
     padding:50px;
     
     .offer{
         width:400px;
+        height:650px;
+        max-height: 700px;
         border: 1px solid rgb(216, 212, 212);
+        margin-left:15px;
         margin-bottom:20px;
-        // margin:20px 5px;
-        // border: 2px solid black;
+
+        h2{
+            padding-top:15px;
+            text-align: center;
+            font-family: 'Roboto Condensed', Arial, sans-serif;
+        }
     }
 
     .offer:hover{
         background-color: rgb(245, 204, 94);
     }
+
     img{
-        width:400px;
+        width:399px;
         height:250px;
     }
+
     p{
+        height:250px;
         padding:20px 10px 10px 20px;;
         font-size: 16px;
 
     }
-    // a{
-    //     display: inline-block;
-    //     width:100%;
-    //     padding-right: 30px;
-    //     text-align: right;
-    //     color:rgb(75, 74, 74) !important;
-    // }
-    // .offers a:hover{
-    //     color:red !important;
-    // }
+
     h4{
         width:100%;
         padding:30px 0;
@@ -111,6 +116,7 @@
     margin:100px auto;
     padding: 0;
     overflow-y: auto;
+
     .modal-title{
         text-align: center;
     }   
@@ -136,10 +142,12 @@
     .modal-body{
         background-color: rgb(250, 237, 237);
         padding: 20px;
+
         p{
             padding: 20px 0;
             font-size: 18px;
         }
+
         img{
         width:760px;
         height: 300px;
@@ -148,12 +156,15 @@
 
     .informations{
         padding:20px 50px;
+
         .info{
             padding-right:20px;
             width:50%;
         }
+
         :nth-child(even){
             padding-right:0;
+
            p{
                 padding-left:30px;
                 padding-right: 0;
@@ -174,24 +185,26 @@
 
     &--buy{
             margin:150px auto;
-            width:610px;
+            width:700px;
             height: 500px;
+
         .modal-content, .modal-body, .modal-dialog, .modal-header, .modal-title{
-            width:600px;
-            max-width: 600px;
+            width:700px;
+            max-width: 700px;
             margin:50px auto;
             border:none;
             margin:0 auto;
         }
+
         .modal-body{
+            padding-right:10px;
             p{
                 width:20px;
                 height:30px;
                 padding:0 5px;
             }
-            :last-child{
-                width:150px;
-            }
+
+            
         }
 
         input{
@@ -200,6 +213,7 @@
             
         .date{
             height:30px;
+
             input{
                 width: 100px !important;
                 height: 30px;

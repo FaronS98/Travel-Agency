@@ -13,10 +13,10 @@
 <body>
     <div class="wrap">
         <nav class="navtop row row--wrap">
-            <div class="logo row row--space-between">
+            <a href="/index.html" class="logo row row--space-between">
                 <img src="assets/images/logo.jpg">
                 <h1>lobetrotter</h1>
-            </div>
+            </a>
             <ul class="row row--horizontal-center row--vertical-end row--wrap">
                 <li><a href="index.html">Strona głowna</a></li>
                 <li><a href="offers.html">Oferty</a></li>
@@ -67,7 +67,7 @@
             </div>
         </section>
         <section class="contents ">
-            <section class="questions">
+            <section id="question-form-wrapper" class="questions">
                 <h2>Umów wizyte</h2>
                 <form class="column row--vertical-center" action="">
                     <label>Imie</label><input type="text" placeholder="Imie">
@@ -76,8 +76,9 @@
                     <label>Termin</label><input type="datetime-local" placeholder="Termin">
                     <label>E-mail</label><input type="email" placeholder="E-mail">
                     <label>Telefon</label><input type="tel" placeholder="Telefon">
-                    <button type="submit">Wyślij</button>
+                    <button id="submit-contact-form-button" type="submit">Wyślij</button>
                 </form>
+                <span id="submit-message" class="submit-message">Zgłoszenie zostało wysłane</span>
             </section>
         </section>
         <footer class="footer"><a href="https://pl.freepik.com/darmowe-zdjecie-wektory/logo">Logo plik wektorowy utworzone przez freepik - pl.freepik.com</a></footer>

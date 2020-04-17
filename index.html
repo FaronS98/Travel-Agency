@@ -4,6 +4,7 @@
 	<meta cherset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Globetrotter</title>
+    <meta name="viewport" content="width-device-width , initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
@@ -13,18 +14,18 @@
 <body>
     <div class="wrap">
         <nav class="navtop row row--wrap">
-            <div class="logo row row--space-between">
+            <a href="/index.html" class="logo row row--space-between">
                 <img src="assets/images/logo.jpg">
                 <h1>lobetrotter</h1>
-            </div>
+            </a>
             <ul class="row row--horizontal-center row--vertical-end row--wrap">
                 <li><a href="offers.html">Oferty</a></li>
                 <li><a href="regulations.html">Regulamin</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
             <div class="sigin">
-                <a href="/login" class="button button--white-background button--black-text button--black-border margin-bot20">Zaloguj&nbsp;się</a>
-                <a href="/login" class="button button--white-background button--black-text button--black-border">Zarejestruj&nbsp;się</a>
+                <a href="#" class="button button--white-background button--black-text button--black-border margin-bot20">Zaloguj&nbsp;się</a>
+                <a href="#" class="button button--white-background button--black-text button--black-border">Zarejestruj&nbsp;się</a>
             </div>
         </nav>
         <header class="header row row--vertical-center">
@@ -33,7 +34,7 @@
         <main class="contents">
             <section class="categories">
                 <h2>Zapewniamy szeroki wybór ofert</h2>
-                <div class="row row--space-between">
+                <div class="flexwrap-center">
                     <div class="category column row--horizontal-center">
                         <img src="assets/images/family.png" alt="">
                         <h3>rodzinne wycieczki</h3>
@@ -53,31 +54,32 @@
             </section>
             <section class="types">
                 <h2>Specjalizujemy się w organizowaniu wielu rodzai podróży</h2>
-                <div class="type row row--vertical-center">
+                <div class="type row row--space-between flexwrap">
                     <img src="assets/images/mountains.jpg" alt="">
                     <p class="column row--vertical-center">Pomysły i inspiracje – podpowiadamy gdzie pójść, pojechać i co zobaczyć. Nasza baza wycieczek liczy już ponad 200 propozycji! Opisujemy zarówno popularne, jak i mało znane kierunki wyjazdów o zróżnicowanym stopniu trudności, począwszy od tras spacerowych, gdzie można wybrać się nawet z dzieckiem w wózku, aż po drogi wspinaczki ferratowej. Podpowiadamy jak samemu bezpiecznie zrealizować górską wyprawę publikując szczegółowy opis trasy, informacje o dojeździe, komunikacji i parkingach. Podajemy najkorzystniejsze lokalizacje noclegowe z możliwością bezpośredniej rezerwacji online. Do opisów zagranicznych propozycji dołączamy słowniki z przydatnymi hasłami turystycznymi i górskimi.</p>
                 </div>
-                <div class="type row row--vertical-center">
+                <div class="type row row--space-between flexwrap">
                     <p class="column row--vertical-center">Trudno znaleźć kogoś, kto nie lubi wypoczywać nad morzem. Nadmorskie tereny dają możliwość aktywnego wypoczynku, jak spacery nordic walking, długie wędrówki po plaży, wycieczki rowerowe w przybrzeżnych terenach leśnych, sport na plaży i mnóstwo innych. Drugim wariantem jest rzecz jasna bardziej leniwy wypoczynek w postaci wylegiwania się na plaży, dla wielu najchętniej w gorących promieniach słońca. Nad morzem każdy znajdzie coś dla siebie, a oprócz tego nadmorski mikroklimat bardzo pozytywnie wpływa na zdrowie większości osób. Oczywiście, nad morze warto wybierać się o każdej porze roku, nie tylko w letnim skwarze.</p>
                     <img src="assets/images/sea.jpg" alt="">
                 </div>
-                <div class="type row row--vertical-center">
+                <div class="type row row--space-between flexwrap">
                     <img src="assets/images/pyramyds.jpg" alt="">
                     <p class="column row--vertical-center">Uwielbiasz zabytki? Zwiedzaj razem z nami zabytki z całego świata, zaczynając od kraju poprzez kontynęt aż na kraniec świata. A może 7 cudów świata ? Zalicza się do nich piramidy egipskie, wiszące ogrody w Babilonie, posąg Zeusa Olimpijskiego w Olimpii, tzw. Kolosa Rodyjskiego, Mauzoleum w Halikarnasie, świątynię Artemidy w Efezie oraz latarnię morską na wysepce Faros. Inne wersje list siedmiu cudów świata zawierały jeszcze kolosy Memnona w Egipcie i mury Babilonu.</p>
                 </div>
-                <div class="type row row--vertical-center">
+                <div class="type row row--space-between flexwrap">
                     <p class="column row--vertical-center">To idealna chwila by zaplanować urlop i... ruszyć w Polskę. Ta bowiem oferuje naprawdę wiele, przynajmniej jeśli chodzi o zabytki. Wśród nich zamki, fortyfikacje, inne pomniki historii. Do tego wiele ciekawych wydarzeń popularyzujących wcale nie nudną przeszłość. Warto zwiedzić wielką trójkę polskich zabytków – największe założenia zamkowe w Polsce, czyli: Zamek Krzyżacki w Malborku, Zamek Królewski na Wawelu i Zamek Książ w Wałbrzychu. Warto też zwiedzić zamek Krzyżtopór w Ujeździe.</p>
                     <img src="assets/images/city.jpg" alt="">
                 </div>
             </section>
-            <section class="questions">
+            <section id="question-form-wrapper" class="questions">
                 <h2>Masz jakieś pytania?   Skontaktuj się z nami.</h2>
-                <form class="column row--vertical-center" action="">
-                    <input type="text" placeholder="Imie">
-                    <input type="text" placeholder="E-mail">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Treść pytania"></textarea>
-                    <button type="submit">Wyślij</button>
+                <form class="column row--vertical-center" action="submit.php" method="post">
+                    <input type="text" placeholder="Imie" required/>
+                    <input type="text" placeholder="E-mail" required/>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Treść pytania" required></textarea>
+                    <button id="submit-contact-form-button" type="submit">Wyślij</button>
                 </form>
+                <span id="submit-message" class="submit-message">Zgłoszenie zostało wysłane</span>
             </section>
         </main>
         <footer class="footer"><a href="https://pl.freepik.com/darmowe-zdjecie-wektory/logo">Logo plik wektorowy utworzone przez freepik - pl.freepik.com</a></footer>

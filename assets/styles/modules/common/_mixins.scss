@@ -1,7 +1,19 @@
 @import './_variables';
 
+@mixin desktop1600 {
+	@media (max-width: #{$desktop1600-width}) {
+		@content;
+	}
+}
+
 @mixin desktop {
 	@media (max-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+@mixin desktop1280 {
+	@media (max-width: #{$desktop1280-width}) {
 		@content;
 	}
 }
@@ -12,8 +24,15 @@
 	}
 }
 
+
 @mixin tablet {
 	@media (max-width: #{$tablet-width}) {
+		@content;
+	}
+}
+
+@mixin mobile550{
+	@media (max-width: #{$mobile550-width}) {
 		@content;
 	}
 }
@@ -29,6 +48,8 @@
 		@content;
 	}
 }
+
+
 
 // Flex mixins
 @mixin display-flex {

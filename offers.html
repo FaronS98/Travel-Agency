@@ -14,10 +14,10 @@
 <body>
     <div class="wrap">
         <nav class="navtop row row--wrap">
-            <div class="logo row row--space-between">
+            <a href="/index.html" class="logo row row--space-between">
                 <img src="assets/images/logo.jpg">
                 <h1>lobetrotter</h1>
-            </div>
+            </a>
             <ul class="row row--horizontal-center row--vertical-end row--wrap">
                 <li><a href="index.html">Strona główna</a></li>
                 <li><a href="regulations.html">Regulamin</a></li>
@@ -28,59 +28,61 @@
                 <a href="/login" class="button button--white-background button--black-text button--black-border">Zarejestruj&nbsp;się</a>
             </div>
         </nav>
-        <!-- <header class="header header--offerspage">
-            <p>Zaplanujemy twoją wyprawę, zacznij od wybrania kategorii</p>
-        </header> -->
         <header class="headerofferpage  column row--horizontal-center">
             <div class="row row--vertical-center row--horizontal-center">
                 <div class="options column row--vertical-center">
-                    <label>Typ wyjzadu</label><input type="text" placeholder="Typ wyjazdu">
-                    <label>Kierunek</label><input type="text" placeholder="Kierunek podróży">
-                    <label>Miesiąc</label><input type="text" name="Months" list="Months" placeholder="Miesiąc">
-                            <datalist id="Months">
-                                <option value="Styczeń">
-                                <option value="Luty">
-                                <option value="Marzec">
-                                <option value="Kwiecień">
-                                <option value="Maj">
-                                <option value="Czerwiec">
-                                <option value="Lipiec">
-                                <option value="Sierpień">
-                                <option value="Wrzesień">
-                                <option value="Pażdziernik">
-                                <option value="Listopad">
-                                <option value="Grudzień">
+                    <label>Typ wyjzadu</label><input type="text" name="Type" list="Type" placeholder="Typ wyjazdu">
+                        <datalist id="Type">
+                            <option value="Sport">
+                            <option value="Wypoczynek">
+                            <option value="Kolonia">
+                            <option value="Góry">
+                            <option value="Morze">
+                            <option value="Zwiedzanie">
+                        </datalist>
+                    <label>Kierunek</label><input type="text" name="Way" list="Way" placeholder="Kierunek">
+                            <datalist id="Way">
+                                <option value="Polsa">
+                                <option value="Niemcy">
+                                <option value="Egipt">
+                                <option value="USA">
+                                <option value="Włochy">
+                                <option value="Hiszpania">
+                                <option value="Ukraina">
+                                <option value="Chiny">
+                                <option value="Indie">
+                                <option value="Brazylia">
                             </datalist>
+                    <label>Maksymalna Cena</label> <input type="number" min="200" max="3000" name="Mature" placeholder="Minimum 200zł">
                 </div>
                 <button type="submit">Szukaj<i class="fas fa-search"></i></button>
                 <div class="options column row--vertical-center">
-                        <label>Dorośli</label> <input type="number" value="2" min="1" max="20" name="Mature" placeholder="Dorośli">
-                        <label>Dzieci</label><input type="number" value="0" min="1" max="40" name="Kids" placeholder="Dzieci">
-                        <label>Pobyt</label><input type="number" value="7" min="1" max="31" name="Time" placeholder="Pobyt">
+                        <label>Dorośli</label> <input type="number" min="1" max="20" name="Mature" placeholder="Dorośli">
+                        <label>Dzieci</label><input type="number"  min="1" max="40" name="Kids" placeholder="Dzieci">
+                        <label>Pobyt</label><input type="number" min="1" max="31" name="Time" placeholder="Pobyt">
                 </div>
              </div>
         </header>
-
         <div class="modal" id="mymodal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal-title">Tytuł - Kraj</h2>
+                        <h2 class="modal-title" id="modal-name"></h2>
                         <img src="assets/images/cross.png"  type="button" data-dismiss="modal">
                     </div>
                     <div class="modal-body">
                         <img src="assets/images/sea.jpg" alt="">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium quas quasi, deserunt perspiciatis repudiandae voluptas laborum, id totam aut suscipit esse at facilis corrupti sed quia vero beatae omnis reprehenderit.</p>
+                        <p id="modal-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium quas quasi, deserunt perspiciatis repudiandae voluptas laborum, id totam aut suscipit esse at facilis corrupti sed quia vero beatae omnis reprehenderit.</p>
                         <div class="informations row row--space-between">
                             <div class="info column row--vertical-center">
-                                <p>Kraj: Polsa</p>
-                                <p>Miasta: Kielce Nowy Sącz</p>
-                                <p>Terminy dostępne w miesiącach: Styczeń Luty</p>
+                                <p id="modal-country"></p>
+                                <p id="modal-city"></p>
+                                <p id="modal-months"></p>
                             </div>
                             <div class="info column row--vertical-center">
-                                <p>Liczba dorosłych: 2 do 10</p>
-                                <p>Liczba dzieci: 2 do 10</p>
-                                <p>Liczba dni pobytu: 4 do 31</p>
+                                <p id="modal-adultsNumber"></p>
+                                <p id="modal-childNumber"></p>
+                                <p id="modal-days"></p>
                             </div>
                         </div>
                     </div>
@@ -91,15 +93,21 @@
                 </div>
             </div>
         </div>
-
         <div class="modal modal--buy" id="mymodal2">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title">Płatność kartą</h2>
-                            <img src="assets/images/cross.png"  type="button" data-dismiss="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        
+                        <h2 class="modal-title">Płatność kartą<p>Informacje zostaną wysłane na maila</p> </h2>
+                        <img src="assets/images/cross.png"  type="button" data-dismiss="modal">
+                    </div>
+                    <div class="modal-body row row--space-between">
+                        <div class="column row--vertical-center row--horizontal-center">
+                            <label>Imię:</label> <input type="text"  placeholder="Imie">
+                            <label>Nazwisko:</label><input type="text"  placeholder="Nazwisko">
+                            <label>E-mail</label><input type="email" placeholder="e-mail">
                         </div>
-                        <div class="modal-body column row--vertical-center row--horizontal-center">
+                        <div class="column row--vertical-center row--horizontal-center">
                                 <label>Numer karty:</label> <input type="number"  min="1111111111111111" max="9999999999999999" name="Mature" placeholder="6543 2345 000 8756">
                                 <label>Data ważności:</label>
                                 <div class="date row row--vertical-center">
@@ -109,53 +117,15 @@
                                 </div>
                                 <label>CW2/CVC2</label><input type="number" min="111" max="999" name="Time" placeholder="648">
                         </div>
-                        <div class="modal-footer row row--vertical-center">
-                                <button type="button" data-dismiss="modal" class="button button--white-background button--black-text button--black-border">Zapłać</a>
-                                </button>
-                        </div>
+                    </div>
+                    <div  class="modal-footer row row--vertical-center">
+                            <button  type="button" data-dismiss="modal" class="button button--white-background button--black-text button--black-border">Zapłać</a>
+                            </button>
                     </div>
                 </div>
             </div>
-
-
-        <section class="offers">
-                <div class="offer"  data-toggle="modal" data-target="#mymodal">
-                    <img src="assets/images/sea.jpg" alt="">
-                    <p>"Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela.Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela</p>
-                    
-                    <h4>1000zł/doba</h3>
-                </div>
-                <div class="offer">
-                        <img src="assets/images/sea.jpg" alt="">
-                        <p>"Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela.Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela</p>
-                        
-                        <h4>1000zł/doba</h3>
-                    </div>
-                    <div class="offer">
-                            <img src="assets/images/sea.jpg" alt="">
-                            <p>"Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela.Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela</p>
-                            
-                            <h4>1000zł/doba</h3>
-                        </div>
-                        <div class="offer">
-                                <img src="assets/images/sea.jpg" alt="">
-                                <p>"Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela.Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela</p>
-                                
-                                <h4>1000zł/doba</h3>
-                            </div>
-                            <div class="offer">
-                                    <img src="assets/images/logo.jpg" alt="">
-                                    <p>"Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela.Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela</p>
-                                    
-                                    <h4>1000zł/doba</h3>
-                                </div>
-                                <div class="offer">
-                                        <img src="assets/images/logo.jpg" alt="">
-                                        <p>"Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela.Różnica między ludźmi, którzy realizują swoje marzenia, a całą resztą świata nie polega na zasobności portfela</p>
-                                        
-                                        <h4>1000zł/doba</h3>
-                                    </div>
-        </section>
+        </div>
+        <section id="offers-container" class="offers row row--horizontal-center row--vertical-center"></section>
         <footer class="footer"><a href="https://pl.freepik.com/darmowe-zdjecie-wektory/logo">Logo plik wektorowy utworzone przez freepik - pl.freepik.com</a></footer>
     </div>
     <script src="assets/scripts/libs/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
