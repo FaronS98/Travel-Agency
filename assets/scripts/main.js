@@ -5,8 +5,10 @@ $(document).ready(() => {
 function loadInitFunction() {
 	submitContactForm();
 	loadOffersData();
+	loadVisitedOffersData();
 	updateModalData();
 	filterOffers();
+	setOfferVisited();
 }
 
 function submitContactForm() {
@@ -36,6 +38,20 @@ function loadOffersData() {
 		});
 
 		$('#offers-container').append(html);
+	});
+}
+
+function loadVisitedOffersData() {
+	$.getJSON( "../data/offers.json", (response) => {
+		const offers = response;
+		let html = '';
+		const values = JSON.parse(sessionStorage.getItem("offers"));
+		
+		offers.forEach((offer) => {
+			return values.includes(offer.id) ? html += getOfferHtml(offer) : '';
+		});
+
+		$('#visited-container').append(html);
 	});
 }
 
@@ -114,4 +130,25 @@ function filterOffers() {
 			$('#offers-container').append(html);
 		});
 	});
+}
+
+function setOfferVisited(){
+	$(document).on('click', '.offer', function() {
+		const offer = this;
+		const id = parseInt(offer.getAttribute('offer-id'));		
+		const currentValues = JSON.parse(sessionStorage.getItem("offers"));
+		const array = [id];
+
+		if (currentValues === null) {
+			sessionStorage.setItem('offers', JSON.stringify(array));
+		} else {
+			const values = JSON.parse(sessionStorage.getItem("offers"));
+			
+			values.map(item => {
+				array.push(item);
+			})
+			const uniq =  [...new Set(array)];
+			sessionStorage.setItem('offers', JSON.stringify(uniq));
+		}
+	})
 }

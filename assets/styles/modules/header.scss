@@ -8,6 +8,12 @@
     font-family: Arial, sans-serif;
 }
 
+.wrap{
+    width:100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 .flexwrap-center{
     @include display-flex;
     @include flex-direction(row);
