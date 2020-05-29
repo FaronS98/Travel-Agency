@@ -6,9 +6,11 @@ function loadInitFunction() {
 	submitContactForm();
 	loadOffersData();
 	loadVisitedOffersData();
+	loadCartOffersData();
 	updateModalData();
 	filterOffers();
 	setOfferVisited();
+	setOfferInCart();
 }
 
 function submitContactForm() {
@@ -46,12 +48,26 @@ function loadVisitedOffersData() {
 		const offers = response;
 		let html = '';
 		const values = JSON.parse(sessionStorage.getItem("offers"));
-		
+
 		offers.forEach((offer) => {
 			return values.includes(offer.id) ? html += getOfferHtml(offer) : '';
 		});
 
 		$('#visited-container').append(html);
+	});
+}
+
+function loadCartOffersData() {
+	$.getJSON( "../data/offers.json", (response) => {
+		const offers = response;
+		let html = '';
+		const values = JSON.parse(sessionStorage.getItem("cart"));
+
+		offers.forEach((offer) => {
+			return values.includes(offer.id) ? html += getOfferHtml(offer) : '';
+		});
+
+		$('#cart-offers-container').append(html);
 	});
 }
 
@@ -65,6 +81,7 @@ function updateModalData() {
 
 			offers.filter((offer) => {
 				if (offer.id === id) {
+					$('div#mymodal').attr('data-modal-id', offer.id);
 					$(`#modal-name`).text(offer.name);
 					$('#modal-description').text(offer.description);
 					$('#modal-country').text(`Kraj: ${offer.country}`);
@@ -149,6 +166,26 @@ function setOfferVisited(){
 			})
 			const uniq =  [...new Set(array)];
 			sessionStorage.setItem('offers', JSON.stringify(uniq));
+		}
+	})
+}
+
+function setOfferInCart() {
+	$('.button-pay').on('click', function() {
+		const id = parseInt($('div#mymodal').attr('data-modal-id'));		
+		const currentValues = JSON.parse(sessionStorage.getItem("cart"));
+		const array = [id];
+
+		if (currentValues === null) {
+			sessionStorage.setItem('cart', JSON.stringify(array));
+		} else {
+			const values = JSON.parse(sessionStorage.getItem("cart"));
+			
+			values.map(item => {
+				array.push(item);
+			})
+			const uniq =  [...new Set(array)];
+			sessionStorage.setItem('cart', JSON.stringify(uniq));
 		}
 	})
 }
